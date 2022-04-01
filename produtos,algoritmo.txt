@@ -1,7 +1,7 @@
 Algoritmo "Produtos"
 // 
 //  
-// Descrição   : calcula os preços dos prodiutos
+// Descrição   : calcula os preços dos produtos
 // Autor(a)    : Vitor Hugo Wancenbock Ferreira
 // Data atual  : 21/03/2022
 
