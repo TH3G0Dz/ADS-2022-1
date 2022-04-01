@@ -1,0 +1,28 @@
+Algoritmo "triangulos"
+// 
+//  
+// Descrição   : Fala se as medidas formam um triangulo (função)
+// Autor(a)    : Vitor Hugo Wancenbock Ferreira
+// Data atual  : 21/03/2022
+Var
+a, b, c:real
+
+
+Inicio
+escreval ("digite os valores das medidas 1, 2 e 3: ")
+ leia (a, b, c)
+se (a + b > c)e(a + c > b)e(b + c > a)entao
+ escreva ("é um triangulo")
+se(a=b)e(b=c)entao
+ escreval(" ","Equilátero")
+  fimse
+se(a<>b)e(b<>c)e(c<>a)entao
+ escreval(" ","Escaleno")
+  fimse
+se(a=b)e(a<>c)ou(b=c)e(c<>a)ou(c=a)e(a<>b)entao
+ escreval(" ","Isósceles")
+  fimse
+   senao
+   escreva ("Não é triângulo")
+    fimse
+Fimalgoritmo

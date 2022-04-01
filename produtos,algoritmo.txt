@@ -1,0 +1,42 @@
+Algoritmo "Produtos"
+// 
+//  
+// Descrição   : calcula os preços dos prodiutos
+// Autor(a)    : Vitor Hugo Wancenbock Ferreira
+// Data atual  : 21/03/2022
+
+Var
+Cod, Quant: inteiro
+valor_prod, valor_nota, desconto, valor_final:real
+
+Inicio
+escreva("Informe o Código e a Quantidade comprada do produto:")
+ leia (Cod, Quant)
+  se (Cod>=1) e (Cod<=10)entao
+   valor_prod<-10
+    fimse
+  se (Cod>=11) e (Cod<=20) entao
+   valor_prod<-15
+    fimse
+  se (Cod>=21) e (Cod<=30) entao
+   valor_prod<-20
+    fimse
+  se (Cod>=31) e (Cod<=40) entao
+   valor_prod<-30
+    fimse
+valor_nota<-valor_prod*Quant
+ escreva ("valor da nota sem desconto:",valor_nota)
+  se (valor_nota<250) entao
+   desconto<-valor_nota*0.05
+    senao
+     se (valor_nota<=500) entao
+      desconto<-valor_nota*0.1
+       senao
+        desconto<-valor_nota*0.15
+        fimse
+       fimse
+valor_final<-valor_nota-desconto
+escreval ("valor do desconto:",desconto)
+escreval ("valor final da nota:",valor_final)
+
+fimalgoritmo
